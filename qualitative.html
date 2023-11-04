@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qualitative</title>
+  <link rel="stylesheet" href="qualitative.css">
+  <link rel="icon" type="image/x-icon" href="logo.png">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <script src="navbar.js" defer></script>
+</head>
+
+<body>
+  <div class="context">
+    <nav class="nav">
+      <label class="logo">RSAP</label>
+      <ul class="nav-links">
+        <li hidden><a href="home.html" class="link">Home</a></li>
+        <li hidden><a href="quali.html" class="link">Qualitative</a></li>
+        <li hidden><a href="quanti.html" class="link">Quantitative</a></li>
+        <li hidden><a href="Progress Tracker.html" class="link">Progress Tracker</a></li>
+        <li hidden><a href="tools.html" class="link">Tools</a></li>
+      </ul>
+      <i class="uil uil-search search-icon" id="searchIcon"></i>
+      <div class="search-box">
+        <i class="uil uil-search search-icon"></i>
+        <input type="text" id="searchInput" placeholder="Search..." oninput="search()">
+        <div id="searchResults" class="search-results">
+          <div class="result" data-keyword="design"></div>
+        </div>
+      </div>
+    </nav>
+
+    <h1 style="text-align: center; margin-top: 80px; margin-bottom: 10px;" class="fade-in">Qualitative Research Progress</h1>
+
+    <div class="chapter1">
+      <h1 style="margin-bottom: 10px;" class="fade-in">Chapter 1 - Introduction</h1>
+
+      <h3><input type="checkbox" id="quali-introduction" onclick="updateQualiProgress()"><label> Introduction</label>
+        <progress id="quali-progress-introduction" max="100" value="0" hidden></progress>
+      </h3>
+
+      <h3><input type="checkbox" id="quali-conceptual-frame" onclick="updateQualiProgress()"><label> Conceptual Framework</label>
+        <progress id="quali-progress-conceptual" max="100" value="0" hidden></progress>
+      </h3>
+
+      <h3><input type="checkbox" id="quali-problem-statement" onclick="updateQualiProgress()"><label> Statement of the
+          Problem</label>
+        <progress id="quali-progress-problem-statement" max="100" value="0" hidden></progress>
+      </h3>
+
+      <h3><input type="checkbox" id="quali-significance" onclick="updateQualiProgress()"><label> Significance of the
+          Study</label>
+        <progress id="quali-progress-significance" max="100" value="0" hidden></progress>
+      </h3>
+
+      <h3><input type="checkbox" id="quali-scope" onclick="updateQualiProgress()"><label> Scope and Limitations</label>
+        <progress id="quali-progress-scope" max="100" value="0" hidden></progress>
+      </h3>
+
+      <h3><input type="checkbox" id="quali-definition" onclick="updateQualiProgress()"><label> Definition of Terms</label>
+        <progress id="quali-progress-definition" max="100" value="0" hidden></progress>
+      </h3>
+    </div>
+
+    <div class="chapter2">
+      <h1 style="margin-bottom: 10px; margin-top: 10px;" class="fade-in">Chapter 2 - Review of Related Literature</h1>
+
+      <h3><input type="checkbox" id="quali-citation" onclick="updateQualiProgress()"><label> 30 - 50 Citation</label>
+        <progress id="quali-progress-citation" max="100" value="0" hidden></progress>
+      </h3>
+
+      <h3><input type="checkbox" id="quali-synthesis" onclick="updateQualiProgress()"><label> Synthesis</label>
+        <progress id="quali-progress-synthesis" max="100" value="0" hidden></progress>
+      </h3>
+
+    </div>
+
+    <div class="chapter3">
+      <h1 style="margin-bottom: 10px; margin-top: 10px;" class="fade-in">Chapter 3 - Methodology</h1>
+
+      <h3><input type="checkbox" id="quali-methodology" onclick="updateQualiProgress()"><label> Methodology</label>
+        <progress id="quali-progress-methodology" max="100" value="0" hidden></progress>
+      </h3>
+
+      <h3><input type="checkbox" id="quali-design" onclick="updateQualiProgress()"><label> Research Design</label>
+        <progress id="quali-progress-design" max="100" value="0" hidden></progress>
+      </h3>
+
+      <h3><input type="checkbox" id="quali-technique" onclick="updateQualiProgress()"><label> Sampling Technique</label>
+        <progress id="quali-progress-technique" max="100" value="0" hidden></progress>
+      </h3>
+
+      <h3><input type="checkbox" id="quali-participants" onclick="updateQualiProgress()"><label> Participants of the
+          Study</label>
+        <progress id="quali-progress-participants" max="100" value="0" hidden></progress>
+      </h3>
+
+      <h3><input type="checkbox" id="quali-instrument" onclick="updateQualiProgress()"><label> Research Instrument</label>
+        <progress id="quali-progress-instrument" max="100" value="0" hidden></progress>
+      </h3>
+
+      <h3><input type="checkbox" id="quali-procedure" onclick="updateQualiProgress()"><label> Research Procedure</label>
+        <progress id="quali-progress-procedure" max="100" value="0" hidden></progress>
+      </h3>
+
+      <h3><input type="checkbox" id="quali-data-analysis" onclick="updateQualiProgress()"><label> Data Analysis</label>
+        <progress id="quali-progress-data-analysis" max="100" value="0" hidden></progress>
+      </h3>
+
+      <h3><input type="checkbox" id="quali-ethical" onclick="updateQualiProgress()"><label> Ethical Considerations</label>
+        <progress id="quali-progress-ethical" max="100" value="0" hidden></progress>
+      </h3>
+    </div>
+
+    <div class="progress">
+      <h1 class="fade-in">Overall Progress</h1>
+      <progress id="quali-overall-progress" max="100" value="0" class="prog"></progress>
+      <span id="quali-progress-text" class="span">0%</span>
+    </div>
+  </div>
+  <script src="qualitative.js"></script>
+  <a href="ProgressTracking.html" class="link">Progress Tracking</a>
+
+
+  <button class="button" role="button" onclick="history.back()">Back</button>
+</body>
+</html>

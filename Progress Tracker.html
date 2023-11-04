@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Progress Tracker</title>
+  <link rel="stylesheet" href="Progress Tracker.css" />
+  <link rel="icon" type="image/x-icon" href="logo.png">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  <script src="navbar.js" defer></script>
+</head>
+
+<body>
+  <div class="context">
+  <nav class="nav">
+    <i class="uil uil-bars navOpenBtn"></i>
+    <label class="logo">RSAP</label>
+    <ul class="nav-links">
+      <i class="uil uil-times navCloseBtn"></i>
+      <li><a href="home.html" class="link">Home</a></li>
+      <li><a href="quali.html" class="link">Qualitative</a></li>
+      <li><a href="quanti.html" class="link">Quantitative</a></li>
+      <li><a href="Progress Tracker.html" class="link">Progess Tracker</a></li>
+      <li><a href="tools.html" class="link">Tools</a></li>
+    </ul>
+    <i class="uil uil-search search-icon" id="searchIcon"></i>
+    <div class="search-box">
+      <i class="uil uil-search search-icon"></i>
+      <input type="text" id="searchInput" placeholder="Search..." oninput="search()">
+      <div id="searchResults" class="search-results">
+        <div class="result" data-keyword="design">
+        </div>
+    </div>
+  </nav>
+
+  <ul class="research-list">
+    <li class="research-item">
+      <a href="qualitative.html" class="research-link">
+        <h1 class="research-title">Qualitative Research</h1>
+        <p class="research-description">Progress Tracker</p>
+      </a>
+    </li>
+    <li class="research-item">
+      <a href="quantitative.html" class="research-link">
+        <h1 class="research-title">Quantitative Research</h1>
+        <p class="research-description">Progress Tracker</p>
+      </a>
+    </li>
+  </ul>
+</body>
+</html>
